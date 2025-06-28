@@ -1,0 +1,130 @@
+/* Donate Component Styles */
+.donate-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.donate-hero {
+  background: url('/assets/image/food3.jpg') center/cover no-repeat;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 720px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hero-overlay h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-button {
+  background-color: #fcfdff;
+  color: #cabd05;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #1e40af;
+}
+
+/* Donation Section */
+.donate-section {
+  padding: 4rem 2rem;
+  background: #f9fbfe;
+}
+
+.donate-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.flyer-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+.flyer-image {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.donate-details {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+  max-width: 500px;
+  width: 100%;
+}
+
+.donate-details h2 {
+  color: #1e3a8a;
+  font-size: 1.75rem;
+  margin-bottom: 1.2rem;
+}
+
+.donate-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donate-details li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.whatsapp-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #059669;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.whatsapp-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .donate-grid {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .flyer-container,
+  .donate-details {
+    flex: 1;
+  }
+}

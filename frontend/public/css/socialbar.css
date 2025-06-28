@@ -1,0 +1,81 @@
+.social-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 2px solid #ccc;
+  background: #f9f9f9;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 1.3rem;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.15);
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.instagram:hover {
+  color: #C13584;
+}
+
+.search {
+  color: #666;
+}
+
+.search-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.search-container {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.4s ease;
+}
+
+.search-container.show {
+  height: 40px;
+}
+
+.search-input {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 60%;
+  max-width: 300px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .icon {
+    font-size: 1.1rem;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+}

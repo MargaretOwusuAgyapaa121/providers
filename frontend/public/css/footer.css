@@ -1,0 +1,115 @@
+/* Footer.css */
+.custom-footer {
+ background: linear-gradient(to right, rgba(117, 116, 116, 0.7), #222 100%);
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  border-left: 4px solid #ffffff;
+  padding-left: 10px;
+}
+
+.footer-column p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin: 0.5rem 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #f0f8ff;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: #0b3d91;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.newsletter-form button {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #0b3d91;
+  border: none;
+  font-weight: bold;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+  background-color: #dbeafe;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+  font-size: 0.85rem;
+}

@@ -1,0 +1,209 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: #fff;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url('/assets/image/slider9.jpg') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+lay h1 {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: #facc15;
+  text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.05em;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.hero-over
+/* Icon Section */
+.icon-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #fff;
+}
+
+.icon-section .icon {
+  font-size: 5rem;
+  color: #d97706;
+  margin-bottom: 1rem;
+}
+
+.icon-section p {
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #374151;
+}
+
+/* About Section */
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #f9fafb;
+  align-items: center;
+}
+
+.about-section img {
+  width: 80%;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #b45309;
+  text-decoration: underline;
+  text-decoration-color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.about-text .founder {
+  margin-top: 2rem;
+  color: #78350f;
+  font-weight: 600;
+}
+
+/* Belief & Mission Sections */
+.text-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.text-section h2 {
+  font-size: 2rem;
+  color: #b45309;
+  text-decoration: underline;
+  text-decoration-color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.text-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #374151;
+  font-size: 1.125rem;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.video-section h2 {
+  font-size: 2rem;
+  color: #b45309;
+  text-decoration: underline;
+  text-decoration-color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.video-section button {
+  background-color: #d97706;
+  color: white;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-section button:hover {
+  background-color: #b45309;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #111827;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #facc15;
+  margin-bottom: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-card {
+  background-color: #facc15;
+  color: #111827;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button {
+  text-align: center;
+}
+
+.contact-button button {
+  background-color: white;
+  color: #b45309;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contact-button p {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #d1d5db;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2.5rem;
+  }
+}
