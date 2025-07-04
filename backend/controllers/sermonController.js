@@ -1,16 +1,11 @@
-import { db } from '../config/db.js';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-// Get current directory for resolving file paths
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const db = require('../config/db');
+const fs = require('fs');
+const path = require('path');
 
 // Fetch latest 10 sermons/events
-export const getSermons = async (req, res) => {
+const getSermons = async (req, res) => {
   try {
-    const [rows] = await db.query(
+    const [rows] = await db.promise().query(
       'SELECT * FROM sermons_events ORDER BY created_at DESC LIMIT 10'
     );
     res.json(rows);
@@ -21,7 +16,7 @@ export const getSermons = async (req, res) => {
 };
 
 // Post a new sermon/event with optional file
-export const postSermon = async (req, res) => {
+const postSermon = async (req, res) => {
   try {
     const { text } = req.body;
     let fileUrl = null;
@@ -32,7 +27,7 @@ export const postSermon = async (req, res) => {
       fileType = req.file.mimetype;
     }
 
-    await db.query(
+    await db.promise().query(
       'INSERT INTO sermons_events (text, fileUrl, fileType) VALUES (?, ?, ?)',
       [text, fileUrl, fileType]
     );
@@ -45,11 +40,11 @@ export const postSermon = async (req, res) => {
 };
 
 // Delete a sermon/event and its associated file
-export const deleteSermon = async (req, res) => {
+const deleteSermon = async (req, res) => {
   try {
     const { id } = req.params;
 
-    const [rows] = await db.query('SELECT fileUrl FROM sermons_events WHERE id = ?', [id]);
+    const [rows] = await db.promise().query('SELECT fileUrl FROM sermons_events WHERE id = ?', [id]);
     const item = rows[0];
 
     if (!item) {
@@ -67,10 +62,16 @@ export const deleteSermon = async (req, res) => {
       }
     }
 
-    await db.query('DELETE FROM sermons_events WHERE id = ?', [id]);
+    await db.promise().query('DELETE FROM sermons_events WHERE id = ?', [id]);
     res.json({ message: 'Deleted successfully.' });
   } catch (err) {
     console.error("Error deleting sermon:", err);
     res.status(500).json({ error: 'Failed to delete sermon.' });
   }
+};
+
+module.exports = {
+  getSermons,
+  postSermon,
+  deleteSermon,
 };

@@ -1,24 +1,37 @@
-import express from 'express';
-import multer from 'multer';
-import { getSermons, postSermon, deleteSermon } from '../controllers/sermonController.js';
+const express = require('express');
+const multer = require('multer');
+const fs = require('fs');
+const { getSermons, postSermon, deleteSermon } = require('../controllers/sermonController');
 
 const router = express.Router();
 
+// Ensure uploads directory exists
+const uploadDir = 'uploads';
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir);
+}
+
+// Multer config
 const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, 'uploads/'),
+  destination: (req, file, cb) => cb(null, uploadDir),
   filename: (req, file, cb) => cb(null, Date.now() + '-' + file.originalname),
 });
+
 const upload = multer({
   storage,
   fileFilter: (req, file, cb) => {
-    const allowed = ['image/', 'audio/', 'video/'];
-    if (allowed.some(type => file.mimetype.startsWith(type))) cb(null, true);
-    else cb(new Error('Unsupported file type'), false);
+    const allowed = ['audio/', 'video/'];
+    if (allowed.some(type => file.mimetype.startsWith(type))) {
+      cb(null, true);
+    } else {
+      cb(new Error('Only audio and video files are allowed'), false);
+    }
   },
 });
 
+// Routes
 router.get('/', getSermons);
 router.post('/', upload.single('file'), postSermon);
 router.delete('/:id', deleteSermon);
 
-export default router;
+module.exports = router;
