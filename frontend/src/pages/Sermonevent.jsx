@@ -68,9 +68,16 @@ const SermonAndEventPage = () => {
     if (!window.confirm("Delete this post?")) return;
 
     try {
-      await fetch(`http://localhost:5000/api/sermons-events/${id}`, {
+      const res = await fetch(`http://localhost:5000/api/sermons-events/${id}`, {
         method: "DELETE",
       });
+
+      if (!res.ok) {
+        const error = await res.json();
+        throw new Error(error.error || "Delete failed");
+      }
+
+      setMessage("Post deleted successfully.");
       fetchItems();
     } catch (err) {
       console.error("Delete failed:", err);
@@ -103,14 +110,19 @@ const SermonAndEventPage = () => {
         </form>
       )}
 
-      {message && <p style={{ color: message.includes("failed") ? "red" : "green" }}>{message}</p>}
+      {message && <p style={{ color: message.toLowerCase().includes("fail") ? "red" : "green" }}>{message}</p>}
+
       {loading ? (
         <p>Loading sermons and events...</p>
       ) : (
         <div className="item-list">
           {items.length > 0 ? (
             items.map((item) => (
-              <div key={item.id} className="item" style={{ border: "1px solid #ccc", padding: "1rem", marginBottom: "1rem" }}>
+              <div
+                key={item.id}
+                className="item"
+                style={{ border: "1px solid #ccc", padding: "1rem", marginBottom: "1rem" }}
+              >
                 <p>{item.text}</p>
 
                 {item.fileUrl && item.fileType?.startsWith("video") && (
@@ -130,7 +142,10 @@ const SermonAndEventPage = () => {
                 )}
 
                 {isBishop && (
-                  <button onClick={() => handleDelete(item.id)} style={{ marginTop: "0.5rem", background: "red", color: "#fff" }}>
+                  <button
+                    onClick={() => handleDelete(item.id)}
+                    style={{ marginTop: "0.5rem", background: "red", color: "#fff" }}
+                  >
                     Delete
                   </button>
                 )}
