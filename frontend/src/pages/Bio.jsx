@@ -58,10 +58,10 @@ const BioPage = () => {
             <a href="https://www.tiktok.com/@bondservant04?_t=ZN-8xlGpT7eXDT&_r=1" target="_blank" rel="noreferrer" aria-label="TikTok">
               <i className="fab fa-tiktok"></i>
             </a>
-             <a href="https://www.tiktok.com/@bondservant04?_t=ZN-8xlGpT7eXDT&_r=1" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <a href="https://www.facebook.com/share/1CUN9Dvn1e/?mibextid=wwXIfr" target="_blank" rel="noreferrer" aria-label="Facebook">
               <i className="fab fa-facebook"></i>
             </a>
-             <a href="https://www.tiktok.com/@bondservant04?_t=ZN-8xlGpT7eXDT&_r=1" target="_blank" rel="noreferrer" aria-label="TikTok">
+            <a href="https://youtu.be/4nvliE6v7yQ" target="_blank" rel="noreferrer" aria-label="YouTube">
               <i className="fab fa-youtube"></i>
             </a>
           </div>
