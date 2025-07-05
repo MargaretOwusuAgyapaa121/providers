@@ -27,6 +27,7 @@ const Navbar = () => {
           <ul className="dropdown-content">
             <li><a href="/OurStory">Our Story</a></li>
             <li><a href="/About">About Us</a></li>
+            <li><a href="/Bio">Biography</a></li>
           </ul>
         </li>
         <li className="dropdown">

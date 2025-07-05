@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import SocialBar from './components/SocialBar';
 import Home from './pages/Home';  
 import About from './pages/AboutUs';
+import BioPage from './pages/Bio'; 
 import OurStory from './pages/OurStory';
 import Gallery from './pages/Gallery';
 import MissionProjects from './pages/MissionProject'; 
@@ -13,6 +14,7 @@ import Contact from './pages/Contact';
 import Donate from './pages/Donate';  
 import Login from './pages/Login';
 import SermonAndEventPage from './pages/Sermonevent';
+
 import Footer from './components/Footer';
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/bio" element={<BioPage />} /> 
         <Route path="/ourstory" element={<OurStory />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/missionproject" element={<MissionProjects />} />
