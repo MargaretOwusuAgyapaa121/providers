@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const missions = [
   {
     title: "Village Outreach",
@@ -19,9 +18,9 @@ const missions = [
     location: "Nakpanduri, North East Region, Ghana"
   },
   {
-    title: "Church Planting",
+    title: "Paying off Debts",
     description:
-      "Paying off the debts of struggling families in pakistan setting them free from bondage of slavery giving them a new beginning filled with hope and dignity.",
+      "Paying off the debts of struggling families in Pakistan, setting them free from bondage of slavery and giving them a new beginning filled with hope and dignity.",
     image: "/assets/image/freeslider1.jpg",
     date: "June 2025",
     location: "Pakistan"
@@ -31,13 +30,13 @@ const missions = [
 const ApostolicMissions = () => {
   return (
     <section className="apostolic-wrapper">
-      <div className="hero-banner">
-        <div className="overlay">
-          <h1>Apostolic Missions</h1>
-          <p>Spreading truth, healing, and hope to the nations.</p>
-        </div>
+      {/* Centered Header */}
+      <div className="section-header">
+        <h1>Apostolic Missions</h1>
+        <p>Spreading truth, healing, and hope to the nations.</p>
       </div>
 
+      {/* Mission Cards */}
       <div className="missions-container">
         {missions.map((mission, idx) => (
           <div className="mission-card" key={idx}>
