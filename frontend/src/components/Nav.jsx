@@ -44,7 +44,7 @@ const Navbar = () => {
         </li>
 
         <li className="dropdown">
-          <a href="/mission">Platform <FaPlus className="plus" /></a>
+          <a href="/">Platform <FaPlus className="plus" /></a>
           <ul className="dropdown-content">
             <li><a href="/MissionProject">Mission Project</a></li>
             <li><a href="/ApostolicMission">Apostolic Ministry</a></li>
