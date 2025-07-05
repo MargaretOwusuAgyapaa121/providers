@@ -9,10 +9,12 @@ const SermonAndEventPage = () => {
   const [message, setMessage] = useState("");
   const isBishop = localStorage.getItem("bishop") === "true";
 
+  const API_URL = "https://providers-67no.onrender.com"; // Update with your actual API URL
+
   const fetchItems = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/api/sermons-events");
+      const res = await fetch(`${API_URL}/api/sermons-events`);
       const data = await res.json();
       setItems(data);
     } catch (err) {
@@ -42,7 +44,7 @@ const SermonAndEventPage = () => {
     setMessage("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/sermons-events", {
+      const res = await fetch(`${API_URL}/api/sermons-events`, {
         method: "POST",
         body: formData,
       });
@@ -68,7 +70,7 @@ const SermonAndEventPage = () => {
     if (!window.confirm("Delete this post?")) return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/sermons-events/${id}`, {
+      const res = await fetch(`${API_URL}/api/sermons-events/${id}`, {
         method: "DELETE",
       });
 
@@ -126,11 +128,11 @@ const SermonAndEventPage = () => {
                 <p>{item.text}</p>
 
                 {item.fileUrl && item.fileType?.startsWith("video") && (
-                  <video controls width="100%" src={`http://localhost:5000${item.fileUrl}`} />
+                  <video controls width="100%" src={`${API_URL}${item.fileUrl}`} />
                 )}
 
                 {item.fileUrl && item.fileType?.startsWith("audio") && (
-                  <audio controls src={`http://localhost:5000${item.fileUrl}`} />
+                  <audio controls src={`${API_URL}${item.fileUrl}`} />
                 )}
 
                 {!item.fileUrl && <p>(No media attached)</p>}

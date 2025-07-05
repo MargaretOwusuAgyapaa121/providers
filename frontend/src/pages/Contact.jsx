@@ -14,12 +14,14 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const API_URL = "https://providers-67no.onrender.com"; // Update with your actual API URL
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
 
     try {
-      const res = await fetch("http://localhost:5000/api/contact", {
+      const res = await fetch(`${API_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
