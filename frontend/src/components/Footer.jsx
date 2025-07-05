@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaYoutube,
-  
-} from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,13 +13,22 @@ const Footer = () => {
             the love and message of Jesus Christ.
           </p>
           <div className="social-icons">
-            <a href="https://www.facebook.com/share/1CUN9Dvn1e/?mibextid=wwXIfr " aria-label="Facebook">
+            <a
+              href="https://www.facebook.com/share/1CUN9Dvn1e/?mibextid=wwXIfr"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF />
             </a>
-            <a href="https://youtube.com/@providersmissions?si=psMWgey1Zd6c4YAe" aria-label="YouTube">
+            <a
+              href="https://youtube.com/@providersmissions?si=psMWgey1Zd6c4YAe"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube />
             </a>
-           
           </div>
         </div>
 
@@ -33,7 +38,7 @@ const Footer = () => {
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="#">Sermons</a></li>
+            <li><a href="/sermons">Sermons</a></li>
             <li><a href="/donate">Donate</a></li>
             <li><a href="/contact">Contact</a></li>
           </ul>
@@ -43,10 +48,10 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Support & Help</h4>
           <ul>
-            <li><a href="#">Volunteer</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#">Prayer Request</a></li>
+            <li><a href="/volunteer">Volunteer</a></li>
+            <li><a href="/faqs">FAQs</a></li>
+            <li><a href="/donate">Donate</a></li>
+            <li><a href="/prayer-request">Prayer Request</a></li>
           </ul>
         </div>
 
@@ -55,7 +60,7 @@ const Footer = () => {
           <h4>Newsletter</h4>
           <p>Stay updated with our latest news and sermons.</p>
           <form className="newsletter-form">
-            <input type="email" placeholder="Your email" />
+            <input type="email" placeholder="Your email" required />
             <button type="submit">Subscribe</button>
           </form>
         </div>
