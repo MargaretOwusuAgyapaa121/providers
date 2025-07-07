@@ -1,8 +1,3 @@
-const db = require('../config/db');
-const fs = require('fs');
-const path = require('path');
-
-// Fetch latest 10 sermons/events
 const getSermons = async (req, res) => {
   try {
     const [rows] = await db.promise().query(

@@ -9,7 +9,7 @@ const SermonAndEventPage = () => {
   const [message, setMessage] = useState("");
   const isBishop = localStorage.getItem("bishop") === "true";
 
-  const API_URL = "https://providers-67no.onrender.com"; // Update with your actual API URL
+  const API_URL = "https://providers-67no.onrender.com"; 
 
   const fetchItems = async () => {
     setLoading(true);

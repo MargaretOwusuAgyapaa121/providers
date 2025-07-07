@@ -14,7 +14,7 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const API_URL = "https://providers-67no.onrender.com"; // Update with your actual API URL
+  const API_URL = "https://providers-67no.onrender.com"; 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
