@@ -12,7 +12,7 @@ const BioPage = () => {
           />
         </div>
         <div className="bio-text-section">
-          <h1 className="bio-name">Rev. Abdulia Abdul Razak Ibrahim</h1>
+          <h1 className="bio-name">Rev. Abdulai Abdul Razak Ibrahim</h1>
           <p className="bio-role">Founder & Lead Pastor</p>
 
           <section className="bio-section">
