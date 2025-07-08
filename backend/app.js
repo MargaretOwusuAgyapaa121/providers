@@ -12,6 +12,7 @@ const app = express();
 // Middlewares
 app.use(cors({ origin: ['http://localhost:3000', 'https://providersmissions.org'] }));
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/api/sermons-events', sermonsRoutes);
 app.use('/api', contactRoutes);
