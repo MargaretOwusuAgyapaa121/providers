@@ -10,11 +10,7 @@ export default function AboutUsComponent() {
         </div>
       </section>
 
-      {/* Icon Section */}
-      {/* <section className="icon-section"> */}
-        {/* <div className="icon">✝️</div>
-        <p>Tear of Grace. Faith in every drop.</p>
-      </section> */}
+      
 
       {/* About Us Section */}
       <section className="about-section">
@@ -27,7 +23,7 @@ export default function AboutUsComponent() {
           <p>
             Welcome to Provider Missions a place of worship, community, and spiritual growth. A glimpse of heaven with glowing love and a study Bible at heart.
           </p>
-          <p className="founder">Founder & Leader: Rev. Abdulai Abdulai Razark Ibrahim</p>
+          <p className="founder">Founder & Leader: Rev. Abdulai  Razark Ibrahim</p>
         </div>
       </section>
 

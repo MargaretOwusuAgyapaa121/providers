@@ -65,7 +65,7 @@ lay h1 {
 .about-section img {
   width: 80%;
   border-radius: 1.5rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(63, 53, 63, 0.15);
 }
 
 .about-text h2 {
@@ -105,7 +105,7 @@ lay h1 {
 .text-section p {
   max-width: 700px;
   margin: 0 auto;
-  color: #374151;
+  color: #563d58;
   font-size: 1.125rem;
 }
 
@@ -141,7 +141,7 @@ lay h1 {
 
 /* Contact Section */
 .contact-section {
-  background-color: #111827;
+  background-color: #827e83;
   color: white;
   padding: 4rem 2rem;
 }

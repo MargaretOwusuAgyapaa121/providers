@@ -1,7 +1,7 @@
 /* Footer.css */
 .custom-footer {
- background: linear-gradient(to right, rgba(117, 116, 116, 0.7), #222 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, #e0e0e0, #f7c7f7);
+  color: #1a1a1a;
   padding: 60px 20px 20px;
   font-family: "Segoe UI", sans-serif;
 }
@@ -24,13 +24,13 @@
 .footer-column h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #1a1a1a;
   border-left: 4px solid #ffffff;
   padding-left: 10px;
 }
 
 .footer-column p {
-  color: #cbd5e1;
+  color: #0b0c0c;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -47,12 +47,12 @@
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #f0f8ff;
+  color: #140113;
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #ffffff;
+  color: #181717;
   text-decoration: underline;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .social-icons a {
-  color: #ffffff;
+  color: #7a4eab;
   background-color: rgba(255, 255, 255, 0.15);
   padding: 8px;
   border-radius: 50%;
@@ -73,7 +73,7 @@
 
 .social-icons a:hover {
   background-color: #ffffff;
-  color: #0b3d91;
+  color: #7a4eab;
 }
 
 .newsletter-form {
@@ -92,8 +92,8 @@
 
 .newsletter-form button {
   padding: 8px 12px;
-  background-color: #ffffff;
-  color: #0b3d91;
+  background-color: #06000c;
+  color: #f3f2f5;
   border: none;
   font-weight: bold;
   border-radius: 0 4px 4px 0;
@@ -110,6 +110,6 @@
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: #e2e8f0;
+  color: #151616;
   font-size: 0.85rem;
 }
