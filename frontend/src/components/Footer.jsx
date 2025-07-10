@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="footer-container">
         {/* Column 1 */}
         <div className="footer-column">
-          <h3>Provider Missions</h3>
+          <h3>Providers Missions</h3>
           <p>
-            Provider Missions is committed to transforming lives through
+            Providers Missions is committed to transforming lives through
             the love and message of Jesus Christ.
           </p>
           <div className="social-icons">
@@ -68,7 +68,7 @@ const Footer = () => {
 
       {/* Bottom bar */}
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Provider Missions. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Providers Missions. All rights reserved.</p>
       </div>
     </footer>
   );

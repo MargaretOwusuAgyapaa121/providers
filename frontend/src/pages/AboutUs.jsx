@@ -33,7 +33,7 @@ export default function AboutUsComponent() {
         <p>
            At Providers Missions, we believe in the life changing power of the gosple and the unshakable
            truth of God's Word. We're driven by Great Commision to share Jesus, make disciples, and love people 
-           deeply. Led by the Holy Spirit, webuild strong churches, raise bold leaders, and bring hope where it's needed most.
+           deeply. Led by the Holy Spirit, we build strong churches, raise bold leaders, and bring hope where it's needed most.
            United in Christ, we shine His light to the world may knowHis Love.
         </p>
       </section>
@@ -62,7 +62,7 @@ export default function AboutUsComponent() {
       <section className="contact-section">
         <div>
           <h2 style={{ color: 'black' }}>Get in Touch</h2>
-          <p style={{ color: 'black' }}>Don’t hesitate to contact us. These are various ways to contact Provided Machines.</p>
+          <p style={{ color: 'black' }}>Don’t hesitate to contact us. These are various ways to contact Providers Machines.</p>
         </div>
 
         <div className="contact-grid">
