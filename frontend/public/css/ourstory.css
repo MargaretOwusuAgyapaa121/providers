@@ -18,9 +18,9 @@
 .story-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #b45309; /* yellow-700 */
+  color: #731399; /* yellow-700 */
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #200119;
   margin-bottom: 1.5rem;
 }
 
@@ -34,7 +34,7 @@
 
 .story-section .highlight {
   font-weight: 600;
-  color: #b45309;
+  color: #731399;
 }
 
 .story-section .italic {
@@ -53,9 +53,9 @@
 .logo-section h2 {
   font-size: 2rem;
   font-weight: bold;
-  color: #b45309;
+  color: #731399;
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #200119;
   margin-bottom: 2rem;
 }
 
@@ -70,7 +70,7 @@
   width: 12rem;
   object-fit: contain;
   border-radius: 9999px;
-  border: 4px solid #facc15;
+  border: 4px solid #200119;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
 }
 

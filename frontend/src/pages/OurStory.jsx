@@ -37,8 +37,8 @@ export default function OurStory() {
         </div>
         <p>
           Our logo is rich with meaning a cross, globe and a dove, each symbolizing a key part of our mission.
-          <span style={{color:"orange", fontWeight:"bold"}}> The cross </span> stand for the love and sacrifice of Jesus Christ. <span style={{color:"orange", fontWeight:"bold"}}>The globe</span> beneath it reflect our commitment
-          to reach the world with gosple, and <span style={{color:"orange", fontWeight:"bold"}}> the dove </span> gently soaring to the side, represent peace, the Holy Spirit,
+          <span style={{color:"purple", fontWeight:"bold"}}> The cross </span> stand for the love and sacrifice of Jesus Christ. <span style={{color:"purple", fontWeight:"bold"}}>The globe</span> beneath it reflect our commitment
+          to reach the world with gosple, and <span style={{color:"purple", fontWeight:"bold"}}> the dove </span> gently soaring to the side, represent peace, the Holy Spirit,
           and the purity of our mission.
           Together, they form a powerful image of faith in action.       </p>
       </section>
