@@ -1,7 +1,7 @@
 /* Footer.css */
 .custom-footer {
-  background: linear-gradient(135deg, #e0e0e0, #f7c7f7);
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #030303, #0d090b);
+  color: #f2e1ae;
   padding: 60px 20px 20px;
   font-family: "Segoe UI", sans-serif;
 }
@@ -24,13 +24,13 @@
 .footer-column h4 {
   font-size: 1.3rem;
   margin-bottom: 1rem;
-  color: #1a1a1a;
+  color: #f2e1ae;
   border-left: 4px solid #ffffff;
   padding-left: 10px;
 }
 
 .footer-column p {
-  color: #0b0c0c;
+  color: #f2e1ae;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -47,12 +47,12 @@
 
 .footer-column ul li a {
   text-decoration: none;
-  color: #140113;
+  color: #f2e1ae;
   transition: color 0.3s;
 }
 
 .footer-column ul li a:hover {
-  color: #181717;
+  color: #049dd9;
   text-decoration: underline;
 }
 

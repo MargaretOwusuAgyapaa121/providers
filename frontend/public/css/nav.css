@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background: linear-gradient(135deg, #e0e0e0, #f7c7f7);
+  background-color: #0d090b;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -18,7 +18,7 @@
 .menu-icon {
   display: none;
   font-size: 24px;
-  color: #7a4eab;
+  color: #200624;
   cursor: pointer;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .nav-links li a {
-  color: #1a1a1a;
+  color: #d9bbb0;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  background-color:#f8eff8;
+  background-color:#0d090b;
   min-width: 160px;
   border-radius: 6px;
   z-index: 999;
@@ -56,7 +56,7 @@
 }
 
 .dropdown-content li a {
-  color: rgb(31, 26, 26);
+  color: #d9bbb0;
   display: block;
 }
 
@@ -72,7 +72,7 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background: #e0e0e0;
+    background: #0d090b;
     display: none;
     padding: 20px;
   }
@@ -83,7 +83,7 @@
 
   .dropdown-content {
     position: static;
-    background-color: #fcd8f9;
+    background-color: #0d090b;
     padding-left: 20px;
   }
 

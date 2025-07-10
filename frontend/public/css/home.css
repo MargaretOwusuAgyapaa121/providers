@@ -5,8 +5,8 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
-  background-color: #f4f4f7;
-  color: #1f1f1f;
+  background-color: linear-gradient(to bottom, #1e2040, #252d59);
+  color: #f2e1ae;
 }
 
 /* Container */
@@ -62,8 +62,8 @@ body, html {
 .hero-button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #130218;
-  color: #fff;
+  background-color: #f2a007;
+  color: #0d090b;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -71,7 +71,7 @@ body, html {
 }
 
 .hero-button:hover {
-  background-color: #4b404d;
+  background-color: #f8f082;
 }
 
 /* Section Title */
@@ -83,7 +83,7 @@ body, html {
 /* Section Text */
 .section-text {
   font-size: 1.1rem;
-  color: #555;
+  color: #52504f;
   max-width: 700px;
   margin: 0 auto 2rem auto;
   line-height: 1.8;
@@ -98,7 +98,7 @@ body, html {
 
 /* Values Section */
 .values-section {
-  background-color: #fff;
+  background-color: #232842;
   padding: 5rem 1rem;
   text-align: center;
 }
@@ -136,8 +136,8 @@ body, html {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, #696565, #1b1b1b);
-  color: white;
+  background: linear-gradient(135deg, #d9bbb0, #d9bbb0);
+  color:#0d090b;
   text-align: center;
   padding: 5rem 1rem;
 }
@@ -146,8 +146,8 @@ body, html {
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #e9b657;
+  color: #0d090b;
   border: none;
   border-radius: 12px;
   cursor: pointer;
