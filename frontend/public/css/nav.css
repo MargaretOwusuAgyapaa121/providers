@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-  background-color: #0d090b;
+ background: linear-gradient(to left, #0d090b, #1a1317, #eeeaeb);
   position: sticky;
   top: 0;
   z-index: 1000;
