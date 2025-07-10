@@ -33,7 +33,7 @@ const Home = () => {
 
       {/* Core Values */}
       <section className="values-section">
-        <h2 className="section-title">Our Core Values</h2>
+        <h2 className="section-title" style={{"color":"white"}}>Our Core Values</h2>
         <div className="values-grid">
           {["Faith", "Service", "Community"].map((value, idx) => (
             <div key={idx} className="value-card">
