@@ -85,7 +85,7 @@ const Contact = () => {
             onChange={handleChange}
             required
           />
-          <button type="submit">Send Message</button>
+          <button type="submit" style={{ "backgroundColor": "#731399", "color": "white" }}>Send Message</button>
 
           {/* Status Feedback */}
           {status && <p className="form-status">{status}</p>}

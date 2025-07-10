@@ -61,7 +61,7 @@ const Footer = () => {
           <p>Stay updated with our latest news and sermons.</p>
           <form className="newsletter-form">
             <input type="email" placeholder="Your email" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" style={{ "backgroundColor": "#731399", "color": "white" }}>Subscribe</button>
           </form>
         </div>
       </div>
