@@ -6,7 +6,7 @@ const BioPage = () => {
       <div className="bio-card">
         <div className="bio-image-section">
           <img
-            src="/assets/image/logo/bio-removebg-preview.png"
+            src="/assets/image/logo/picture.jpg"
             alt="Rev. Abdul Razak Ibrahim"
             className="bio-image"
           />
