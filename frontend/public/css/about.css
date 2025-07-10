@@ -70,9 +70,9 @@ lay h1 {
 
 .about-text h2 {
   font-size: 2rem;
-  color: #b45309;
+  color: #731399;
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #410338;
   margin-bottom: 1rem;
 }
 
@@ -83,7 +83,7 @@ lay h1 {
 
 .about-text .founder {
   margin-top: 2rem;
-  color: #78350f;
+  color: #731399;
   font-weight: 600;
 }
 
@@ -96,9 +96,9 @@ lay h1 {
 
 .text-section h2 {
   font-size: 2rem;
-  color: #b45309;
+  color: #731399;
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #200119;
   margin-bottom: 1rem;
 }
 
@@ -118,14 +118,14 @@ lay h1 {
 
 .video-section h2 {
   font-size: 2rem;
-  color: #b45309;
+  color: #731399;
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #200119;
   margin-bottom: 1rem;
 }
 
 .video-section button {
-  background-color: #d97706;
+  background-color:#731399;
   color: white;
   font-size: 1rem;
   padding: 0.75rem 2rem;
@@ -136,7 +136,7 @@ lay h1 {
 }
 
 .video-section button:hover {
-  background-color: #b45309;
+  background-color: #731399;
 }
 
 /* Contact Section */
@@ -149,7 +149,7 @@ lay h1 {
 .contact-section h2 {
   font-size: 2rem;
   text-decoration: underline;
-  text-decoration-color: #facc15;
+  text-decoration-color: #360341;
   margin-bottom: 1rem;
 }
 
@@ -164,8 +164,8 @@ lay h1 {
 }
 
 .contact-card {
-  background-color: #facc15;
-  color: #111827;
+  background: linear-gradient(to right, #731399, #4d0d66, #2e0840);
+  color: whitesmoke;
   padding: 2rem;
   border-radius: 1.5rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -176,8 +176,8 @@ lay h1 {
 }
 
 .contact-button button {
-  background-color: white;
-  color: #b45309;
+  background-color: rgb(27, 4, 32);
+  color: #f3eeea;
   font-weight: bold;
   font-size: 1rem;
   padding: 0.75rem 2rem;
