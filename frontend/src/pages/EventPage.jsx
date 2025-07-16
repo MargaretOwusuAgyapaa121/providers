@@ -5,8 +5,8 @@ export default function EventPage() {
   return (
     <div className="container">
       <header className="header">
-        <h1>Classic 2025 Gala</h1>
-        <p className="subtitle">An unforgettable evening of elegance and celebration</p>
+        <h1>word explosion</h1>
+        <p className="subtitle">An unforgettable evening of elegance of worship</p>
       </header>
 
       <section className="flyer">
@@ -19,10 +19,10 @@ export default function EventPage() {
       <section className="event-details">
         <h2>Event Details</h2>
         <ul>
-          <li><strong>Date:</strong> December 31, 2025</li>
-          <li><strong>Time:</strong> 7:00 PM – 1:00 AM</li>
-          <li><strong>Location:</strong> Grand Heritage Hall, New York City</li>
-          <li><strong>Dress Code:</strong> Formal Attire</li>
+          <li><strong>Date:</strong> 16th - 20th July 2025</li>
+          <li><strong>Time:</strong> 6:00pm each night</li>
+          <li><strong>Location:</strong> Sunyani Technical University main auditorium, Ghana</li>
+          
         </ul>
       </section>
 
