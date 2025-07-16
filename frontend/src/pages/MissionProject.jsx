@@ -33,13 +33,13 @@ const MissionSection = () => {
   return (
     <section className="mission-section">
 
-      <div className="container">
+      {/* <div className="container" style={{"backgroundColor":"white"}}> */}
         <h2>Global Mission</h2>
         <div className="global-mission">
           <img src="/assets/image/slider9.jpg" alt="" />
           <div className="text-content">
             <h3><a href="/about">Pakistan Crusade</a></h3>
-            <p>Reaching beyound borders with communities around the world to share hope, meet tangible needs,
+            <p className="subtitle">Reaching beyound borders with communities around the world to share hope, meet tangible needs,
               and uplift lives through faith driven action.
             </p>
             
@@ -52,7 +52,7 @@ const MissionSection = () => {
           {["1"].map((count, i) => (
             <div key={i} className="outreach-card">
               <div className="count">{count}</div>
-              <p>We believe ministry starts at home. Our Local Outreach program empowers individual especially our youth
+              <p className="subtitle">We believe ministry starts at home. Our Local Outreach program empowers individual especially our youth
                 to serve thier communities with love, faith, and purpose.
               </p>
               <a href="/about" className="read-more white">Read More</a>
@@ -61,7 +61,7 @@ const MissionSection = () => {
         </div>
 
         <h3>International Mission</h3>
-        <div className="international">
+        <div className="international" cl>
           {[
             {
               img: "/assets/image/slider7.jpg",
@@ -76,7 +76,7 @@ const MissionSection = () => {
             {
               img: "/assets/image/slider8.jpg",
             
-              text: "Providing medical aid and shelter to crisis zones.",
+              text : "Providing medical aid and shelter to crisis zones.",
             },
           ].map((item, idx) => (
             <div className="intl-card" key={idx}>
@@ -114,7 +114,7 @@ const MissionSection = () => {
             </div>
           ))}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };
