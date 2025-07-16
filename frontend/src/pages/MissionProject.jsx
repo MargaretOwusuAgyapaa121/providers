@@ -61,7 +61,7 @@ const MissionSection = () => {
         </div>
 
         <h3>International Mission</h3>
-        <div className="international" cl>
+        <div className="international" >
           {[
             {
               img: "/assets/image/slider7.jpg",
@@ -82,7 +82,7 @@ const MissionSection = () => {
             <div className="intl-card" key={idx}>
               <img src={item.img} alt="" />
               <h4><a href="/about">{item.title}</a></h4>
-              <p>{item.text}</p>
+              <p style={{ color: "gray" }}>{item.text}</p>
             </div>
           ))}
         </div>
@@ -108,7 +108,7 @@ const MissionSection = () => {
               <img src={project.image} alt={project.title} />
               <div className="project-content">
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p style={{ color: "gray" }}>{project.description}</p>
                 <span className="project-tag">{project.category}</span>
               </div>
             </div>
