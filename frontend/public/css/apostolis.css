@@ -29,12 +29,12 @@ body {
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #222;
+  color: #161616;
 }
 
 .section-header p {
   font-size: 1.2rem;
-  color: #555;
+  color: #0f0e0e;
   max-width: 700px;
   margin: 0 auto;
 }
@@ -77,18 +77,18 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: #131212;
 }
 
 .mission-details .meta {
   font-size: 0.95rem;
-  color: #777;
+  color: #0f0f0f;
   margin-bottom: 0.8rem;
 }
 
 .mission-details .desc {
   font-size: 1rem;
-  color: #555;
+  color: #080808;
   margin-bottom: 1rem;
 }
 

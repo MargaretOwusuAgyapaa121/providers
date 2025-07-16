@@ -35,7 +35,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> {/* ✅ Added Contact Route */}
         <Route path="/bishop-dashboard" element={<Login />} />
         <Route path="/sermons" element={<SermonAndEventPage />} /> {/* ✅ Added Sermon and Event Page */}
-        <Route path="/events" element={<EventPage />} /> 
+        <Route path="/eventpage" element={<EventPage />} /> 
         
         <Route path="/donate" element={<Donate />} /> {/* ✅ Added Donate Route */}
       </Routes>

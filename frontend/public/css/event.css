@@ -1,65 +1,83 @@
-.container {
-  font-family: 'Georgia', serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  color: #333;
-  background-color: #c06e11;
-  border: 1px solid #e0d7cc;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap');
+
+.event-page {
+  background-color: #f8f5f0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2rem;
+  animation: fadeIn 1.5s ease;
 }
 
-.header {
+.event-container {
+  background: white;
+  padding: 3rem;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #d5c4a1;
 }
 
-.header h1 {
-  font-size: 3em;
-  margin: 0;
-  color: #4a3f35;
-  font-weight: bold;
+.event-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
 
-.subtitle {
-  font-size: 1.2em;
-  color: #7c6f65;
-  font-style: italic;
+.event-date-location {
+  font-size: 1rem;
+  color: #553463;
+  margin-bottom: 2rem;
 }
 
-.flyer {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.flyer img {
+.event-flyer img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #ccc;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
-.event-details,
-.description {
-  margin: 30px 0;
+.event-description {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
 }
 
-.event-details h2,
-.description h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #c2b8ad;
-  padding-bottom: 5px;
-  color: #3e3329;
+.rsvp-button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
-.event-details ul {
-  list-style: none;
-  padding: 0;
+.rsvp-button:hover {
+  background: #731399;
 }
 
-.event-details li {
-  padding: 5px 0;
-  font-size: 1.1em;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .event-container {
+    padding: 2rem;
+  }
+
+  .event-title {
+    font-size: 2rem;
+  }
 }

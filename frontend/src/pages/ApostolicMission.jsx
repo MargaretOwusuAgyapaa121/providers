@@ -32,8 +32,8 @@ const ApostolicMissions = () => {
     <section className="apostolic-wrapper">
       {/* Centered Header */}
       <div className="section-header">
-        <h1>Apostolic Missions</h1>
-        <p>Spreading truth, healing, and hope to the nations.</p>
+        <h1 style={{ color: "#6b0952ffff" }}>Apostolic Missions</h1>
+        <p style={{ color: "#302e2eff" }}> Spreading truth, healing, and hope to the nations.</p>
       </div>
 
       {/* Mission Cards */}
@@ -42,9 +42,9 @@ const ApostolicMissions = () => {
           <div className="mission-card" key={idx}>
             <img src={mission.image} alt={mission.title} />
             <div className="mission-details">
-              <h2>{mission.title}</h2>
-              <p className="meta">{mission.date} | {mission.location}</p>
-              <p className="desc">{mission.description}</p>
+              <h2 style={{ color: "#6b0952ffff" }}>{mission.title}</h2>
+              <p className="meta" style={{ color: "#0f0e0e" }}>{mission.date} | {mission.location}</p>
+              <p className="desc" style={{ color: "#080808" }}>{mission.description}</p>
               <button className="learn-more">Learn More</button>
             </div>
           </div>
