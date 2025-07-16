@@ -11,7 +11,7 @@ export default function EventPage() {
 
       <section className="flyer">
         <img
-          src="https://via.placeholder.com/700x400.png?text=Classic+2025+Gala+Flyer"
+          src="/image/logo/flyer.png"
           alt="Classic 2025 Gala Flyer"
         />
       </section>
@@ -29,9 +29,7 @@ export default function EventPage() {
       <section className="description">
         <h2>About the Event</h2>
         <p>
-          Join us for the Classic 2025 Gala, a night of sophistication featuring live music,
-          gourmet dining, and a midnight champagne toast. Ring in the new year surrounded by
-          timeless charm and good company.
+          This is not just another gathering, it's a divine appointment! Join us for the Word Explosion 2025, where we will delve deep into the Word of God, experience powerful worship, and witness lives transformed by the power of the Holy Spirit. This event is designed to ignite your faith and equip you for greater works in the Kingdom of God.
         </p>
       </section>
     </div>
