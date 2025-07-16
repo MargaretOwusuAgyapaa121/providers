@@ -14,6 +14,7 @@ import Contact from './pages/Contact';
 import Donate from './pages/Donate';  
 import Login from './pages/Login';
 import SermonAndEventPage from './pages/Sermonevent';
+import EventPage from './pages/EventPage'; // ✅ Added Event Page
 
 import Footer from './components/Footer';
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} /> {/* ✅ Added Contact Route */}
         <Route path="/bishop-dashboard" element={<Login />} />
         <Route path="/sermons" element={<SermonAndEventPage />} /> {/* ✅ Added Sermon and Event Page */}
+        <Route path="/events" element={<EventPage />} /> {/* ✅ Added Event Page */}
         
         <Route path="/donate" element={<Donate />} /> {/* ✅ Added Donate Route */}
       </Routes>
