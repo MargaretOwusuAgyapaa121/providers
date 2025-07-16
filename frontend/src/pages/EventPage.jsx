@@ -11,8 +11,8 @@ export default function EventPage() {
 
       <section className="flyer">
         <img
-          src="/image/logo/flyer.png"
-          alt="Classic 2025 Gala Flyer"
+          src="/assets/image/logo/flyer.jpg"
+          alt="Flyer"
         />
       </section>
 
@@ -29,7 +29,8 @@ export default function EventPage() {
       <section className="description">
         <h2>About the Event</h2>
         <p>
-          This is not just another gathering, it's a divine appointment! Join us for the Word Explosion 2025, where we will delve deep into the Word of God, experience powerful worship, and witness lives transformed by the power of the Holy Spirit. 
+          This is not just another gathering, it's a divine appointment! Join us for the Word Explosion 2025, where we will delve deep into the Word of God, experience powerful worship,
+           and witness lives transformed by the power of the Holy Spirit. 
           This event is designed to ignite your faith and equip you for greater works in the Kingdom of God.
         </p>
       </section>
