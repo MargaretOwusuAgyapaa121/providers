@@ -34,6 +34,7 @@ const Navbar = () => {
           <a href="/sermonevent">Sermons <FaPlus className="plus" /></a>
           <ul className="dropdown-content">
             <li><a href="/Sermonevent">Sermons</a></li>
+            <li><a href="/EventPage">Events</a></li>
           </ul>
         </li>
 
