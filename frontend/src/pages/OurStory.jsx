@@ -52,7 +52,7 @@ export default function OurStory() {
           <div className="contact-card">
             <div className="contact-details">
               <p><strong>Call:</strong>+5108 202 6458 / +1(774) 994-4723</p>
-              <p><strong>Email:</strong> contact@providedmachines.org</p>
+              <p><strong>Email:</strong> contact@providersmachines.org</p>
               {/* <p><strong>Website:</strong> www.providedmachines.org</p> */}
               <p><strong>Location:</strong>173 Grove Street Worcester MA 01605</p>
             </div>

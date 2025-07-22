@@ -68,9 +68,9 @@ export default function AboutUsComponent() {
         <div className="contact-grid">
           <div className="contact-card">
             <div className="contact-details">
-              <p><strong>Call:</strong> +(1508)994-4723  /  0243 225 160</p>
-              {/* <p><strong>Email:</strong> contact@providedmachines.org</p> */}
-              <p><strong>Website:</strong> www.providedmachines.org</p>
+              <p><strong>Call:</strong> +(1508)994-4723  /  0243 225 166</p>
+              {/* <p><strong>Email:</strong> contact@providersmachines.org</p> */}
+              <p><strong>Website:</strong> www.providersmachines.org</p>
               <p><strong>Location:</strong>173 Grove Street Worcester MA 01605</p>
             </div>
           </div>

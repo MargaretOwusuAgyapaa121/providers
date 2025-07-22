@@ -34,7 +34,7 @@ const Donate = () => {
             <ul>
               <li><strong>Paypal:</strong>Paypal.me/ providersmissions</li>
               {/* <li><strong>Account No:</strong> 0193921100001</li> */}
-              <li><strong>Account Name:</strong> Ernest C Deryy</li>
+              <li><strong>Account Name:</strong> Ernest C Derry</li>
               <li><strong>Mobile Money (MTN):</strong> 0243 225 166</li>
               <li><strong>Reference:</strong> Tithe / Offering / Donate</li>
             </ul>
