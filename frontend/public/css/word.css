@@ -1,0 +1,96 @@
+/* --- SECTION WRAPPER --- */
+.mission-section {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #fafafa, #ffffff);
+}
+
+.mission-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 60px;
+  background: linear-gradient(90deg, #731399, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.mission-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #731399, #a855f7);
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+/* --- LAYOUT --- */
+.mission-showcase {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media (min-width: 900px) {
+  .mission-showcase {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* --- IMAGE --- */
+.mission-image img {
+  width: 100%;
+  border-radius: 22px;
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.mission-image img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+/* --- DETAILS --- */
+.mission-details {
+  padding: 10px 20px;
+}
+
+.mission-subtitle a {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  background: linear-gradient(90deg, #111827, #4b5563);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mission-description {
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.7;
+  margin: 22px 0 30px;
+}
+
+/* --- BUTTON --- */
+.mission-button {
+  display: inline-block;
+  padding: 14px 34px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #731399, #a855f7);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(115, 19, 153, 0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mission-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(115, 19, 153, 0.4);
+}
