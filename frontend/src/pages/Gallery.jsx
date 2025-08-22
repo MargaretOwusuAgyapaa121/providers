@@ -17,7 +17,6 @@ const mediaItems = [
   { type: "image", src: "/assets/image/word/worship5.webp", caption: "Spreading the gosple", tags: ["Ministry"] },
   { type: "image", src: "/assets/image/word/worship7.webp", caption: "feeding the needy", tags: ["Donation"] },
   { type: "image", src: "/assets/image/word/worship9.webp", caption: "Spreading the gosple", tags: ["Ministry"] },
-  { type: "image", src: "/assets/image/word/zak.webp", caption: "feeding the needy", tags: ["Donation"] },
   { type: "image", src: "/assets/image/word/zak2.webp", caption: "Spreading the gosple", tags: ["Ministry"] },
   { type: "image", src: "/assets/image/word/zak4.webp", caption: "feeding the needy", tags: ["Donation"] },
   { type: "image", src: "/assets/image/word/zak7.webp", caption: "Spreading the gosple", tags: ["Ministry"] },
