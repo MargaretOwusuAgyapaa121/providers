@@ -60,7 +60,12 @@ const MissionSection = () => {
             faith-filled messages that are transforming lives across nations.
           </p>
 
-          <a href="/events" className="read-more">
+          <a
+            href="https://www.youtube.com/results?search_query=providers+missions"
+            className="read-more"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Read More
           </a>
         </div>
