@@ -1,11 +1,9 @@
-/* Home.css */
-
 /* Global Reset */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', 'Roboto', sans-serif;
-  background-color: linear-gradient(to bottom, #1e2040, #252d59);
+  background: linear-gradient(to bottom, #1e2040, #252d59); /* ✅ fixed */
   color: #f2e1ae;
 }
 
@@ -83,7 +81,7 @@ body, html {
 /* Section Text */
 .section-text {
   font-size: 1.1rem;
-  color: #52504f;
+  color: #ddd; /* ✅ softened for contrast on dark bg */
   max-width: 700px;
   margin: 0 auto 2rem auto;
   line-height: 1.8;
@@ -134,10 +132,130 @@ body, html {
   line-height: 1.6;
 }
 
+/* ✅ Events Preview Section */
+.events-preview {
+  padding: 5rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.event-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* ✅ Events Preview Section - Classy Layout */
+.events-preview {
+  padding: 6rem 1rem;
+  background: linear-gradient(to bottom, #fdfdfd, #f6f6f9);
+  text-align: center;
+}
+
+.event-preview-card {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 3rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.event-preview-card:hover {
+  transform: translateY(-6px);
+}
+
+.event-preview-img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-preview-content {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.event-preview-content h3 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: #1e1e2f;
+  font-family: 'Georgia', serif; /* ✅ premium touch */
+  position: relative;
+}
+
+.event-preview-content h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #a770ef, #fdb99b);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.event-preview-content p {
+  font-size: 1.1rem;
+  color: #666;
+  margin: 1rem 0 2rem;
+  font-style: italic;
+}
+
+.event-button {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #7b0a87, #f2a007);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px; /* ✅ pill-shaped button */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(123, 10, 135, 0.2);
+  transition: all 0.3s ease;
+}
+
+.event-button:hover {
+  background: linear-gradient(135deg, #560663, #e49e04);
+  box-shadow: 0 8px 22px rgba(86, 6, 99, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ✅ Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .event-preview-card {
+    flex-direction: column;
+  }
+  .event-preview-img {
+    width: 100%;
+    height: 280px;
+  }
+  .event-preview-content {
+    text-align: center;
+    align-items: center;
+  }
+ 
+}
+
+
 /* CTA Section */
 .cta-section {
   background: linear-gradient(135deg, #d9bbb0, #d9bbb0);
-  color:#0d090b;
+  color: #0d090b;
   text-align: center;
   padding: 5rem 1rem;
 }

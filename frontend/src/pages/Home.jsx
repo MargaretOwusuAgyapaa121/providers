@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Home = () => {
@@ -11,12 +10,15 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
         <div className="hero-content">
-          <h1 className="hero-title" style={{color:"white"}}>Provider's Missions</h1>
-          <p className="hero-subtitle" style={{color:"whitesmoke"}}>
-            Empowering communities with faith, service, and purpose in a connected world.
+          <h1 className="hero-title" style={{ color: "white" }}>
+            Provider's Missions
+          </h1>
+          <p className="hero-subtitle" style={{ color: "whitesmoke" }}>
+            Empowering communities with faith, service, and purpose in a
+            connected world.
           </p>
           <a href="/about">
-          <button className="hero-button">about  us</button>
+            <button className="hero-button">About Us</button>
           </a>
         </div>
       </section>
@@ -25,35 +27,61 @@ const Home = () => {
       <section className="about-section">
         <h2 className="section-title">About Provider's Missions</h2>
         <p className="section-text">
-          Provider's Mission is a faith-based initiative dedicated to uplifting communities through spiritual growth,
-          outreach programs, and compassionate service. Our goal is to create a future grounded in hope,
-          unity, and purpose.
+          Provider's Mission is a faith-based initiative dedicated to uplifting
+          communities through spiritual growth, outreach programs, and
+          compassionate service. Our goal is to create a future grounded in
+          hope, unity, and purpose.
         </p>
       </section>
 
       {/* Core Values */}
       <section className="values-section">
-        <h2 className="section-title" style={{"color":"white"}}>Our Core Values</h2>
+        <h2 className="section-title" style={{ color: "white" }}>
+          Our Core Values
+        </h2>
         <div className="values-grid">
           {["Faith", "Service", "Community"].map((value, idx) => (
             <div key={idx} className="value-card">
               <h3 className="value-title">{value}</h3>
               <p className="value-text">
-                We are guided by strong moral values, a spirit of generosity, and a deep commitment to serve.
+                We are guided by strong moral values, a spirit of generosity,
+                and a deep commitment to serve.
               </p>
             </div>
           ))}
         </div>
       </section>
 
+      {/* ✅ Events Preview Section */}
+      <section className="events-preview">
+        <h2 className="section-title">Upcoming Events</h2>
+        <div className="event-preview-card">
+          <img
+            src="/assets/image/word/2026.jpg"
+            alt="Upcoming Event"
+            className="event-preview-img"
+          />
+          <div className="event-preview-content">
+            <h3>Pakistan and Azerbaijan Missions</h3>
+            <p>June , 2026 </p>
+            <a href="/eventpage">
+              <button className="event-button" >View All Events</button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Call to Action */}
       <section className="cta-section">
-        <h2 className="section-title" style={{color:"white"}}>Be a Part of Something Greater</h2>
-        <p className="section-text" style={{color:"whitesmoke"}}>
-          Join us in shaping a brighter future with faith and purpose. Discover how you can make an impact.
+        <h2 className="section-title" style={{ color: "white" }}>
+          Be a Part of Something Greater
+        </h2>
+        <p className="section-text" style={{ color: "purple" }}>
+          Join us in shaping a brighter future with faith and purpose. Discover
+          how you can make an impact.
         </p>
         <a href="/contact">
-        <button className="cta-button">Get Involved</button>
+          <button className="cta-button" style={{color:"whitesmoke"}}>Get Involved</button>
         </a>
       </section>
     </div>
@@ -61,4 +89,3 @@ const Home = () => {
 };
 
 export default Home;
-
