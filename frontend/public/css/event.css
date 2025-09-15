@@ -76,6 +76,15 @@ body {
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+.lightbox video {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+  border: 3px solid white;
+  background: black;
+}
+
 
 /* ====== Event Cards ====== */
 .event-card {

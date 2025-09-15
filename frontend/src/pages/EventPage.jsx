@@ -1,25 +1,26 @@
-import { useState } from "react";
 
+
+import { useState } from "react";
 
 export default function EventsPage() {
   const [lightboxSrc, setLightboxSrc] = useState(null);
+  const [isVideo, setIsVideo] = useState(false);
 
   const upcomingEvents = [
     {
       title: "Pakistan and Azerbaigan Missions",
       date: "June , 2026 ",
       location: "Pakistan and Azerbaigan",
-      desc: "Hope, Help, and the Gosple across Nations.",
+      desc: "Hope, Help, and the Gospel across Nations.",
       flyer: "/assets/image/word/2026.jpg",
-      // link: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+      link: "/assets/image/videos/2026.mp4", // 🎥 First video
     },
     {
-      title: "providers Missions",
+      title: "Providers Missions",
       date: "LAST SATURDAY OF EVERY MONTH · 1:00 PM – 3:00 PM",
       location: "ON ZOOM",
-      // desc: "A gathering of tech leaders shaping the future.",
       flyer: "/assets/image/logo/coun.jpg",
-      // link: "/flyers/techsummit.pdf",
+      link: "/assets/image/videos/sch.mp4", // 🎥 Second video
     },
   ];
 
@@ -28,15 +29,16 @@ export default function EventsPage() {
       title: "Word Explosion Crusade",
       date: "July, 16-20, 2025",
       flyer: "/assets/image/logo/flyer.jpg",
-      // link: "/gallery/winter-gala",
     },
     {
-      title: "pakistan Mission",
-      // date: "October 5, 2024",
-      // flyer: "/assets/events/past2.jpg",
-      // link: "/gallery/art-expo",
+      title: "Pakistan Mission",
     },
   ];
+
+  const openLightbox = (src, video = false) => {
+    setLightboxSrc(src);
+    setIsVideo(video);
+  };
 
   return (
     <div>
@@ -56,7 +58,7 @@ export default function EventsPage() {
             <div key={idx} className="event-card">
               <div
                 className="event-image"
-                onClick={() => setLightboxSrc(event.flyer)}
+                onClick={() => openLightbox(event.flyer)}
               >
                 <img src={event.flyer} alt={event.title} />
                 <h3>{event.title}</h3>
@@ -65,14 +67,14 @@ export default function EventsPage() {
                 <p className="event-date">{event.date}</p>
                 <p className="event-location">{event.location}</p>
                 <p className="event-desc">{event.desc}</p>
-                <a
-                  href={event.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="event-link"
-                >
-                  View Details
-                </a>
+                {event.link && (
+                  <button
+                    onClick={() => openLightbox(event.link, true)}
+                    className="event-link"
+                  >
+                    ▶ View Details
+                  </button>
+                )}
               </div>
             </div>
           ))}
@@ -90,9 +92,9 @@ export default function EventsPage() {
             <div key={idx} className="event-card">
               <div
                 className="event-image"
-                onClick={() => setLightboxSrc(event.flyer)}
+                onClick={() => openLightbox(event.flyer)}
               >
-                <img src={event.flyer} alt={event.title} />
+                {event.flyer && <img src={event.flyer} alt={event.title} />}
                 <h3>{event.title}</h3>
               </div>
               <div className="event-content">
@@ -112,7 +114,18 @@ export default function EventsPage() {
           <span className="lightbox-close" onClick={() => setLightboxSrc(null)}>
             &times;
           </span>
-          <img src={lightboxSrc} alt="Event Flyer" />
+          {isVideo ? (
+            <video
+              src={lightboxSrc}
+              controls
+              autoPlay
+            />
+          ) : (
+            <img
+              src={lightboxSrc}
+              alt="Event Flyer"
+            />
+          )}
         </div>
       )}
     </div>
