@@ -15,10 +15,10 @@ export default function EventsPage() {
     },
     {
       title: "providers Missions",
-      // date: "July 14, 2025 · 10AM",
-      // location: "Convention Center, San Francisco",
+      date: "LAST SATURDAY OF EVERY MONTH · 1:00 PM – 3:00 PM",
+      location: "ON ZOOM",
       // desc: "A gathering of tech leaders shaping the future.",
-      // flyer: "/assets/events/flyer2.jpg",
+      flyer: "/assets/image/logo/coun.jpg",
       // link: "/flyers/techsummit.pdf",
     },
   ];
