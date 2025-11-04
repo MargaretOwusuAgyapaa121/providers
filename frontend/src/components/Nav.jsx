@@ -53,6 +53,7 @@ const Navbar = () => {
           </ul>
         </li>
 
+        <li><a href="https://galm16.org/">Church</a></li>
         <li><a href="/Contact">Contact Us</a></li>
         <li><a href="/Donate">Donate</a></li>
       </ul>
