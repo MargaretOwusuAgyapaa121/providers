@@ -14,7 +14,7 @@ export default function AboutUsComponent() {
 
       {/* About Us Section */}
       <section className="about-section">
-        <img src="/assets/image/abtBg.jpg" alt="Bishop" />
+        <img src="/assets/image/word/zak.jpeg" alt="Bishop" />
         <div className="about-text">
           <h2>About Us</h2>
           <p>
