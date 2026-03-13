@@ -57,13 +57,13 @@ const Home = () => {
         <h2 className="section-title">Upcoming Events</h2>
         <div className="event-preview-card">
           <img
-            src="/assets/image/word/2026.jpg"
+            src="/assets/image/word/pak.jpeg"
             alt="Upcoming Event"
             className="event-preview-img"
           />
           <div className="event-preview-content">
             <h3>Pakistan and Azerbaijan Missions</h3>
-            <p>June , 2026 </p>
+            <p> May, 2026 </p>
             <a href="/eventpage">
               <button className="event-button" >View All Events</button>
             </a>

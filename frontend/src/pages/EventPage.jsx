@@ -12,7 +12,7 @@ export default function EventsPage() {
       date: "June , 2026 ",
       location: "Pakistan and Azerbaigan",
       desc: "Hope, Help, and the Gospel across Nations.",
-      flyer: "/assets/image/word/2026.jpg",
+      flyer: "/assets/image/word/pak.jpeg",
       link: "/assets/image/videos/2026.mp4", // 🎥 First video
     },
     {
@@ -31,7 +31,9 @@ export default function EventsPage() {
       flyer: "/assets/image/logo/flyer.jpg",
     },
     {
-      title: "Pakistan Mission",
+      title: "Woman Redefined",
+      date: "November, 29, 2025",
+      flyer: "/assets/image/word/w1.jpeg",
     },
   ];
 
